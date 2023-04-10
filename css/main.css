@@ -1,0 +1,669 @@
+/* h1 {
+    font-family: ff-cocon-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+} */
+
+
+
+
+
+
+
+
+
+
+/* h6 {
+font-family: objektiv-mk1, sans-serif;
+font-weight: 500;
+font-style: normal;
+
+font-family: objektiv-mk1, sans-serif;
+font-weight: 500;
+font-style: italic;
+
+font-family: ff-cocon-pro, sans-serif;
+font-weight: 700;
+font-style: normal;
+
+} */
+
+
+/* My styles */
+
+:root {
+    --violetColor: #724CF9;
+    --footerContentColor: #B8A7F6;
+    --bs-indigo: 114,76,249;
+    /* --bs-body-color: #F2F2F2; */
+    /* --bs-body-color-rgb: 242,242,242; */
+    --bs-body-bg: #E6E6E6;
+    --bs-body-bg-rgb: 230,230,230;
+    --bs-primary: #E6A82D;
+    --bs-primary-rgb: 230,168,45;
+    --bs-secondary: #000001;
+    --bs-secondary-rgb: 0,0,1;
+    --bs-dark: #222222;
+    --bs-dark-rgb: 34,34,34;
+
+    --bs-tertiary-color: #222222;
+    --bs-tertiary-color-rgb: 34,34,34;
+    --bs-focus-ring-color: rgba(var(--bs-indigo), 1);
+    
+    /* --bs-focus-ring-x: outline: 4px dashed black; */
+    /* --bs-focus-ring-y: outline: 4px dashed black; */
+    /* --bs-focus-ring-blur */
+
+}
+
+h1 {
+    font-family: ff-cocon-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.6rem;
+}
+
+h2 {
+    font-family: objektiv-mk1, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+
+button {
+  padding: 5px 10px 5px 10px;
+  background-color: #724CF9;
+  /* margin-bottom: 5px; */
+}
+
+/* ========================================================= Nav styles =========================================================== */
+
+.btn:focus {
+    outline: 4px dashed #724CF9;
+  }
+
+nav .btn-group .btn {
+  color:#000001;
+
+}
+
+nav .btn-group .btn:hover {
+  color: var(--violetColor);
+}
+
+nav .btn-group i {
+  font-size: 2.3rem;
+}
+
+nav .btn-primary {
+    background-color: var(--bs-tertiary-color);
+    border: var(--bs-tertiary-color);
+    
+}
+
+nav .btn-primary:hover, nav .btn-primary:focus, nav .btn-primary:active, nav .btn-primary.active {
+    /* color: var(--bs-tertiary-color) !important; */
+    background-color: var(--bs-primary-color) !important;
+    border: 0.5px solid var(--bs-tertiary-color);
+}
+
+nav .navbar-nav a, nav .navbar-nav a:focus {
+  color: var(--bs-primary);
+}
+
+nav .navbar-nav a:hover {
+  color: var(--bs-secondary);
+}
+
+
+/* .btn-ani {
+    color: var(--bs-primary);
+} */
+
+/* .btn-ani:hover {
+    color: var(--bs-secondary);
+} */
+
+/* .navbar-brand img {
+  width: 100% \9;
+
+} */
+
+
+
+
+/* ========================================================= Welcome styles ==========================================================*/
+
+
+/* #banner {
+  background-image: url(/img/main-banner.jpg);
+  background-size: cover;
+  background-position: center;
+} */
+
+
+#banner-home {
+  padding-top: 8rem;
+  min-height: 100vh;
+  background-image: url(/img/main-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+#banner-home h2 {
+  margin-bottom: 8rem;
+}
+
+
+/* .welcome-content {
+  position: absolute;
+  border-bottom: ;
+
+} */
+
+/* .welcome-content {
+  text-align: center;
+} */
+
+h1 {
+  text-align: center;
+}
+
+
+.welcome-content button {
+  padding: 5px 10px 5px 10px;
+  background-color: #724CF9;
+  margin-bottom: 5px;
+}
+
+.welcome-content {
+  margin: 0 auto;
+  width: 230px;
+  flex: 0 0 230px;
+}
+
+.welcome-content .btn-primary {
+  background-color: var(--bs-primary);
+  border: var(--bs-tertiary-color);
+  
+}
+
+/* .welcome-content .btn-primary:hover, .welcome-content .btn-primary:focus, .welcome-content .btn-primary:active, .welcome-content .btn-primary.active {
+  color: var(--bs-tertiary-color) !important;
+  background-color: var(--bs-primary) !important;
+  border: 0.5px solid var(--bs-tertiary-color);
+} */
+
+
+/* ========================================================= Bit About Me styles =====================================================*/
+
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+
+#bit-about-me .row {
+  margin: 0 auto;
+  /* background-color:#724CF9; */
+}
+
+/* #bit-about-me img {
+  width:100%;
+} */
+
+#bit-about-me {
+  background-color: var(--bs-body-bg);
+}
+
+
+/* ========================================================= Some of My Projects styles ==============================================*/
+
+
+#some-projects .card {
+  max-width: 22rem;
+  margin: 0 auto;
+  border: none;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+
+
+/* =====================================================================================================================================
+                                                            About Page                                                                
+======================================================================================================================================*/
+
+#about-body {
+  background-color: var(--bs-dark);
+}
+
+
+/* ========================================================= Intro styles ============================================================*/
+
+#banner-about {
+  padding-top: 8rem;
+  min-height: 70vh;
+  height: 31rem;
+  /* height: 500px; */
+  background-image: url(/img/main-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+
+/* ========================================================= About me styles =========================================================*/
+
+/* About me section */
+
+#about-me {
+  background-color: var(--bs-tertiary-color);
+  position: relative;
+  /* margin-bottom: 50rem; */
+  height: 65rem;
+
+}
+
+#about-me .container {
+  position: absolute;
+  bottom: 0%;
+  /* top: -10rem; */
+  left: 50%;
+  transform: translateX(-50%);
+  /* background-color: white; */
+  /* padding: 20px; */
+  padding-bottom: 2rem;
+  z-index: 2;
+  width: 85%;
+
+}
+
+.skills i {
+    font-size: 3rem;
+  }
+
+  .skills i:nth-child(7) {
+    margin-left: 0.5rem;
+  }
+
+  .skills i:nth-child(5) {
+    margin-left: 0.2rem;
+
+  }
+
+  .v-line {
+    border-left: 2px solid black;
+    /* height: 2.7rem; */
+    height: 2.5rem;
+    margin-left: 1.8rem;
+  }
+
+  .skills p {
+    margin-bottom: 0rem;
+  }
+
+  /* Past web projects section */
+
+  #past-web-projects {
+    background-color: var(--bs-secondary);
+  }
+
+  #past-web-projects i {
+    font-size: 6rem;
+    color: var(--bs-primary);
+  }
+
+  #past-web-projects i:hover {
+    color: var(--bs-body-color);
+  }
+
+  
+/* =====================================================================================================================================
+                                                            Contact Page                                                                
+======================================================================================================================================*/
+
+#contact-body {
+  background-color: var(--bs-secondary);
+}
+
+/* ========================================================= Section Help styles =====================================================*/
+
+#banner-contact {
+  padding-top: 8rem;
+  min-height: 30vh;
+  background-image: url(/img/main-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+/* Section contact */
+
+#fullName, #emailInfo, #phoneNumber, #comments {
+  border-color: var(--bs-secondary);
+}
+
+
+/* ========================================================= Footer styles ===========================================================*/
+
+
+footer .container {
+  padding: 5px 0px 5px 0px;
+}
+
+footer .container {
+  text-align: center;
+}
+
+footer a, footer p {
+  color: var(--footerContentColor);
+}
+
+
+
+/* =====================================================================================================================================
+                                                           Media Queries                                                                
+======================================================================================================================================*/
+
+
+/* ====================================================== Media queries small mobile =================================================*/
+
+/* @media screen and (min-width: 300px) {
+
+
+} */
+
+/* ==================================================== Media Query tablet styles ====================================================*/
+                
+@media screen and (min-width: 768px) {
+  
+  #bit-about-me h3 {
+    text-align: left;
+    margin-left: 12px;
+  }
+
+
+/* =====================================================================================================================================
+                                                            About Page                                                                
+======================================================================================================================================*/
+
+  #banner-about {
+    min-height: 65vh;
+  }
+
+  #about-me {
+    height: 57rem;
+  }
+
+
+  #about-me .container {
+    bottom: 0%;
+    padding-bottom: 2rem;
+  }
+
+
+  #past-web-projects i {
+    font-size: 8rem;
+  }
+
+
+
+
+  
+
+  /* #about-me .container {
+    bottom: -550px;
+    left: 50%;
+    transform: translateX(-50%);
+  } */
+  
+
+
+
+
+} /* End of @media query tablet*/
+
+
+/* ==================================================== Media Query web styles =======================================================*/
+                                                
+@media screen and (min-width: 992px) {
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3.25rem;
+  }
+  
+  body {
+    background-color: var(--bs-primary);
+  }
+
+  nav .btn-group i {
+    font-size: 3.5rem;
+  }
+
+  /* nav .offcanvas-body li:nth-child(2) {
+    margin:
+  } */
+
+
+  #banner-home {
+    padding-top: 12rem;
+  }
+
+  #bit-about-me {
+    background-color: var(--bs-primary);
+  }
+
+  #some-projects .card {
+    max-width: 36rem;
+    /* margin: 0 auto; */
+  }
+
+  #some-projects .col {
+    background-color: var(--bs-tertiary-color);
+  }
+
+
+/* =====================================================================================================================================
+                                                            About Page                                                                
+======================================================================================================================================*/
+
+  #banner-about {
+    padding-top: 12rem;
+  }
+
+  #about-me {
+    background-color: var(--bs-body-bg);
+    height: 45rem;
+  }
+
+  #banner-about {
+    min-height: 45vh;
+    height: 25rem;
+  }
+
+  /* #about-me .container {
+    bottom: 0%;
+
+  } */
+
+  #about-me .container {
+    position: static;
+    bottom: 0%;
+    /* top: -10rem; */
+    left: 0%;
+    transform: translateX(0%);
+    /* background-color: white; */
+    padding: 20px;
+    z-index: 2;
+    width: 100%;
+  
+  }
+
+  .skills i {
+    font-size: 3rem;
+  }
+
+  .skills i:nth-child(7) {
+    margin-left: 0.5rem;
+  }
+
+  .skills i:nth-child(5) {
+    margin-left: 0.2rem;
+
+  }
+
+  .v-line {
+    border-left: 2px solid black;
+    /* height: 2.7rem; */
+    height: 2.5rem;
+    margin-left: 1.8rem;
+  }
+
+
+  #past-web-projects {
+    background-color: var(--bs-dark);
+  }
+
+  #past-web-projects i {
+    font-size: 27rem;
+  }
+
+
+
+  
+  footer .container {
+    padding: 25px 0px 25px 0px;
+  }
+
+
+
+} /* End of @media query web */
+
+
+
+
+
+/* 
+--bs-border-width: 1px;
+  --bs-border-style: solid;
+  --bs-border-color: #dee2e6;
+  --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+  --bs-border-radius: 0.375rem;
+  --bs-border-radius-sm: 0.25rem;
+  --bs-border-radius-lg: 0.5rem;
+  --bs-border-radius-xl: 1rem;
+  --bs-border-radius-2xl: 2rem;
+  --bs-border-radius-pill: 50rem;
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .btn-nav {
+    position: relative;
+    background-color: var(--bs-tertiary-color);
+    border: none;
+    font-size: 1rem;
+    color: #FFFFFF;
+    padding: 0.375rem 0.75rem 0.375rem 0.75rem;
+    width: 190px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    
+  }
+  
+  .btn-nav:after {
+    content: "";
+    background: #f1f1f1;
+    display: inline-block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .btn-nav:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  } */
+
+
+  
+  /* .btn-nav {
+    color: var(--bs-primary);
+    background-color: var(--bs-tertiary-color);
+    border-color: var(--bs-tertiary-color);
+    border-width: var(--bs-border-width);
+    border: var(--bs-btn-border-width) solid var(--bs-tertiary-color);
+    border: 0.5px solid var(--bs-tertiary-color);
+    padding: 0.3rem 3rem 0.3rem 3rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.375rem;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #0a58ca;
+    --bs-btn-active-border-color: #0a53be;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #0d6efd;
+    --bs-btn-disabled-border-color: #0d6efd;
+}
+
+.btn-nav:hover {
+    color: var(--bs-tertiary-color);
+    background-color: var(--bs-primary);
+    border-color: #222222;
+    border-color: var(--bs-tertiary-color);
+
+}
+
+*/
