@@ -1,17 +1,12 @@
+
+/* Fonts */
+
+
 /* h1 {
     font-family: ff-cocon-pro, sans-serif;
     font-weight: 700;
     font-style: normal;
 } */
-
-
-
-
-
-
-
-
-
 
 /* h6 {
 font-family: objektiv-mk1, sans-serif;
@@ -45,15 +40,9 @@ font-style: normal;
     --bs-secondary-rgb: 0,0,1;
     --bs-dark: #222222;
     --bs-dark-rgb: 34,34,34;
-
     --bs-tertiary-color: #222222;
     --bs-tertiary-color-rgb: 34,34,34;
     --bs-focus-ring-color: rgba(var(--bs-indigo), 1);
-    
-    /* --bs-focus-ring-x: outline: 4px dashed black; */
-    /* --bs-focus-ring-y: outline: 4px dashed black; */
-    /* --bs-focus-ring-blur */
-
 }
 
 h1 {
