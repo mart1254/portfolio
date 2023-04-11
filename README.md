@@ -25,6 +25,10 @@ All of my images are created by me with the exception of the banner image which 
 
 As well, the code for my primary CSS buttons is borrowed from James LeVie's codepen [Button Hover Effects](https://codepen.io/JamesLeVie/pen/eYPYZNY) 
 
+I have also used the [Animate On Scroll Library](https://michalsnik.github.io/aos/) for the addtional CSS library.
+
+All the fonts I have used are from Adobe Fonts
+
 ## Notes
 
 I have a few buttons that like to a page called work-in-process, this page was not apart of any of my UX-Designs such as low/hi-fi wireframes, Journy Maps or Site Diagrams. My UX-Professor Mary Bulkowski-Rose suggested to just focus on the Home, About, and Contact page for the final and add addtional pages over the summer when I have time. 
