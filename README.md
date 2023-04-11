@@ -29,6 +29,8 @@ I have also used the [Animate On Scroll Library](https://michalsnik.github.io/ao
 
 All the fonts I have used are from Adobe Fonts
 
+Icons are from [Font Awesome](https://fontawesome.com/)
+
 ## Notes
 
 I have a few buttons that like to a page called work-in-process, this page was not apart of any of my UX-Designs such as low/hi-fi wireframes, Journy Maps or Site Diagrams. My UX-Professor Mary Bulkowski-Rose suggested to just focus on the Home, About, and Contact page for the final and add addtional pages over the summer when I have time. 
