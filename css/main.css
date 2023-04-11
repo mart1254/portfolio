@@ -71,10 +71,195 @@ h2 {
 }
 
 
-button {
+/* button {
   padding: 5px 10px 5px 10px;
   background-color: #724CF9;
-  /* margin-bottom: 5px; */
+} */
+
+
+
+/* Allows button text to be visable */
+a {
+  position: relative;
+  z-index: 99;
+}
+
+/* Primary CSS button */
+
+.button-primary {
+  position: relative;
+  text-decoration: none;
+  font-family: objektiv-mk1, sans-serif;
+  font-weight: bold;
+  padding: 13px 25px;
+  transition: ease-in 250ms;
+  color: var(--bs-secondary);
+}
+
+.button-one {
+  /* color:#724CF9; */
+  border-radius: 2px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.button-one::before {
+  content: '';
+  display: block;
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  width: 100%;
+  background: var(--bs-secondary);
+  transform-origin: left;
+  transition: ease-in 250ms;
+  z-index: -1;
+}
+
+.button-one::after {
+  content: '';
+  display: block;
+  position: absolute;
+  inset: 0;
+  background: var(--bs-primary);
+  z-index: -2;
+}
+
+.button-one:hover {
+  color: var(--bs-primary);
+}
+
+.button-one:hover::before {
+  height: 100%;
+}
+
+
+/* Secondary CSS button */
+
+.button-two {
+  /* color:#724CF9; */
+  border-radius: 2px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.button-two::before {
+  content: '';
+  display: block;
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  width: 100%;
+  background: var(--bs-secondary);
+  transform-origin: left;
+  transition: ease-in 250ms;
+  z-index: -1;
+}
+
+.button-two::after {
+  content: '';
+  display: block;
+  position: absolute;
+  inset: 0;
+  background: var(--bs-body-bg);
+  z-index: -2;
+}
+
+.button-two:hover {
+  color: var(--bs-primary);
+}
+
+.button-two:hover::before {
+  height: 100%;
+}
+
+
+/* Tertiary CSS button */
+.button-three {
+  /* color:#724CF9; */
+  border-radius: 2px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.button-three::before {
+  content: '';
+  display: block;
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  width: 100%;
+  background: var(--bs-primary);
+  transform-origin: left;
+  transition: ease-in 250ms;
+  z-index: -1;
+}
+
+.button-three::after {
+  content: '';
+  display: block;
+  position: absolute;
+  inset: 0;
+  background: var(--bs-body-bg);
+  z-index: -2;
+}
+
+.button-three:hover {
+  color: var(--bs-secondary);
+}
+
+.button-three:hover::before {
+  height: 100%;
+}
+
+
+/* Code is provided by IanLunn on https://github.com/IanLunn */
+.hvr-bounce-to-top {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.hvr-bounce-to-top:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #2098D1;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-bounce-to-top:hover, .hvr-bounce-to-top:focus, .hvr-bounce-to-top:active {
+  color: white;
+}
+.hvr-bounce-to-top:hover:before, .hvr-bounce-to-top:focus:before, .hvr-bounce-to-top:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
 
 /* ========================================================= Skip links styles ====================================================== */
@@ -104,7 +289,7 @@ button {
 
 /* ========================================================= Nav styles =========================================================== */
 
-.btn:focus {
+.btn:focus, a:focus, button:focus {
     outline: 4px dashed #724CF9;
   }
 
@@ -199,23 +384,21 @@ h1 {
 }
 
 
-.welcome-content button {
-  padding: 5px 10px 5px 10px;
-  background-color: #724CF9;
-  margin-bottom: 5px;
+.welcome-content .button-primary {
+  margin-bottom: 1rem;
 }
 
 .welcome-content {
   margin: 0 auto;
-  width: 230px;
+  width: 100%;
   flex: 0 0 230px;
 }
 
-.welcome-content .btn-primary {
+/* .welcome-content .btn-primary {
   background-color: var(--bs-primary);
   border: var(--bs-tertiary-color);
   
-}
+} */
 
 /* .welcome-content .btn-primary:hover, .welcome-content .btn-primary:focus, .welcome-content .btn-primary:active, .welcome-content .btn-primary.active {
   color: var(--bs-tertiary-color) !important;
@@ -259,6 +442,10 @@ h3 {
   border: none;
   margin-top: 2rem;
   margin-bottom: 1rem;
+}
+
+#some-projects .primary-button {
+  width: 100%;
 }
 
 
