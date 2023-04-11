@@ -219,48 +219,7 @@ a {
 }
 
 
-/* Code is provided by IanLunn on https://github.com/IanLunn */
-.hvr-bounce-to-top {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  position: relative;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-}
-.hvr-bounce-to-top:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #2098D1;
-  -webkit-transform: scaleY(0);
-  transform: scaleY(0);
-  -webkit-transform-origin: 50% 100%;
-  transform-origin: 50% 100%;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-.hvr-bounce-to-top:hover, .hvr-bounce-to-top:focus, .hvr-bounce-to-top:active {
-  color: white;
-}
-.hvr-bounce-to-top:hover:before, .hvr-bounce-to-top:focus:before, .hvr-bounce-to-top:active:before {
-  -webkit-transform: scaleY(1);
-  transform: scaleY(1);
-  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-}
+
 
 /* ========================================================= Skip links styles ====================================================== */
 
@@ -327,30 +286,10 @@ nav .navbar-nav a:hover {
 }
 
 
-/* .btn-ani {
-    color: var(--bs-primary);
-} */
-
-/* .btn-ani:hover {
-    color: var(--bs-secondary);
-} */
-
-/* .navbar-brand img {
-  width: 100% \9;
-
-} */
-
-
 
 
 /* ========================================================= Welcome styles ==========================================================*/
 
-
-/* #banner {
-  background-image: url(/img/main-banner.jpg);
-  background-size: cover;
-  background-position: center;
-} */
 
 
 #banner-home {
@@ -369,15 +308,6 @@ nav .navbar-nav a:hover {
 }
 
 
-/* .welcome-content {
-  position: absolute;
-  border-bottom: ;
-
-} */
-
-/* .welcome-content {
-  text-align: center;
-} */
 
 h1 {
   text-align: center;
@@ -394,17 +324,6 @@ h1 {
   flex: 0 0 230px;
 }
 
-/* .welcome-content .btn-primary {
-  background-color: var(--bs-primary);
-  border: var(--bs-tertiary-color);
-  
-} */
-
-/* .welcome-content .btn-primary:hover, .welcome-content .btn-primary:focus, .welcome-content .btn-primary:active, .welcome-content .btn-primary.active {
-  color: var(--bs-tertiary-color) !important;
-  background-color: var(--bs-primary) !important;
-  border: 0.5px solid var(--bs-tertiary-color);
-} */
 
 
 /* ========================================================= Bit About Me styles =====================================================*/
@@ -421,12 +340,8 @@ h3 {
 
 #bit-about-me .row {
   margin: 0 auto;
-  /* background-color:#724CF9; */
 }
 
-/* #bit-about-me img {
-  width:100%;
-} */
 
 #bit-about-me {
   background-color: var(--bs-body-bg);
@@ -482,7 +397,6 @@ h3 {
 #about-me {
   background-color: var(--bs-tertiary-color);
   position: relative;
-  /* margin-bottom: 50rem; */
   height: 65rem;
 
 }
@@ -490,7 +404,6 @@ h3 {
 #about-me .container {
   position: absolute;
   bottom: 0%;
-  /* top: -10rem; */
   left: 50%;
   transform: translateX(-50%);
   /* background-color: white; */
@@ -500,6 +413,8 @@ h3 {
   width: 85%;
 
 }
+
+/* Skills section */
 
 .skills i {
     font-size: 3rem;
@@ -516,7 +431,6 @@ h3 {
 
   .v-line {
     border-left: 2px solid black;
-    /* height: 2.7rem; */
     height: 2.5rem;
     margin-left: 1.8rem;
   }
@@ -536,9 +450,6 @@ h3 {
     color: var(--bs-primary);
   }
 
-  #past-web-projects i:hover {
-    color: var(--bs-body-color);
-  }
 
   
 /* =====================================================================================================================================
@@ -549,7 +460,7 @@ h3 {
   background-color: var(--bs-secondary);
 }
 
-/* ========================================================= Section Help styles =====================================================*/
+/* ========================================================= Section help styles =====================================================*/
 
 #banner-contact {
   padding-top: 8rem;
@@ -567,6 +478,22 @@ h3 {
 #fullName, #emailInfo, #phoneNumber, #comments {
   border-color: var(--bs-secondary);
 }
+
+
+
+/* ========================================================= Section resume styles ===================================================*/
+
+#section-resume i {
+  font-size: 2rem;
+  margin-right: 0.5rem;
+}
+
+#section-resume .button-primary {
+  max-width: 100%;
+
+}
+
+
 
 
 /* ========================================================= Footer styles ===========================================================*/
@@ -632,20 +559,6 @@ footer a, footer p {
   }
 
 
-
-
-  
-
-  /* #about-me .container {
-    bottom: -550px;
-    left: 50%;
-    transform: translateX(-50%);
-  } */
-  
-
-
-
-
 } /* End of @media query tablet*/
 
 
@@ -669,10 +582,6 @@ footer a, footer p {
     font-size: 3.5rem;
   }
 
-  /* nav .offcanvas-body li:nth-child(2) {
-    margin:
-  } */
-
 
   #banner-home {
     padding-top: 12rem;
@@ -684,7 +593,6 @@ footer a, footer p {
 
   #some-projects .card {
     max-width: 36rem;
-    /* margin: 0 auto; */
   }
 
   #some-projects .col {
@@ -710,22 +618,15 @@ footer a, footer p {
     height: 25rem;
   }
 
-  /* #about-me .container {
-    bottom: 0%;
-
-  } */
 
   #about-me .container {
     position: static;
     bottom: 0%;
-    /* top: -10rem; */
     left: 0%;
     transform: translateX(0%);
-    /* background-color: white; */
     padding: 20px;
     z-index: 2;
     width: 100%;
-  
   }
 
   .skills i {
@@ -768,114 +669,3 @@ footer a, footer p {
 
 } /* End of @media query web */
 
-
-
-
-
-/* 
---bs-border-width: 1px;
-  --bs-border-style: solid;
-  --bs-border-color: #dee2e6;
-  --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
-  --bs-border-radius: 0.375rem;
-  --bs-border-radius-sm: 0.25rem;
-  --bs-border-radius-lg: 0.5rem;
-  --bs-border-radius-xl: 1rem;
-  --bs-border-radius-2xl: 2rem;
-  --bs-border-radius-pill: 50rem;
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .btn-nav {
-    position: relative;
-    background-color: var(--bs-tertiary-color);
-    border: none;
-    font-size: 1rem;
-    color: #FFFFFF;
-    padding: 0.375rem 0.75rem 0.375rem 0.75rem;
-    width: 190px;
-    text-align: center;
-    transition-duration: 0.4s;
-    text-decoration: none;
-    overflow: hidden;
-    cursor: pointer;
-    
-  }
-  
-  .btn-nav:after {
-    content: "";
-    background: #f1f1f1;
-    display: inline-block;
-    position: absolute;
-    padding-top: 300%;
-    padding-left: 350%;
-    margin-left: -20px !important;
-    margin-top: -120%;
-    opacity: 0;
-    transition: all 0.8s
-  }
-  
-  .btn-nav:active:after {
-    padding: 0;
-    margin: 0;
-    opacity: 1;
-    transition: 0s
-  } */
-
-
-  
-  /* .btn-nav {
-    color: var(--bs-primary);
-    background-color: var(--bs-tertiary-color);
-    border-color: var(--bs-tertiary-color);
-    border-width: var(--bs-border-width);
-    border: var(--bs-btn-border-width) solid var(--bs-tertiary-color);
-    border: 0.5px solid var(--bs-tertiary-color);
-    padding: 0.3rem 3rem 0.3rem 3rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: 0.375rem;
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    vertical-align: middle;
-    --bs-btn-focus-shadow-rgb: 49,132,253;
-    --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #0a58ca;
-    --bs-btn-active-border-color: #0a53be;
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: #0d6efd;
-    --bs-btn-disabled-border-color: #0d6efd;
-}
-
-.btn-nav:hover {
-    color: var(--bs-tertiary-color);
-    background-color: var(--bs-primary);
-    border-color: #222222;
-    border-color: var(--bs-tertiary-color);
-
-}
-
-*/
